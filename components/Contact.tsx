@@ -5,16 +5,15 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 bg-sd-black text-white">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           
-          {/* Coloana Stânga: Informații Contact + Hartă Integrată */}
-          <div className="md:col-span-5 flex flex-col justify-between">
+          {/* Coloana Stânga: Informații Contact + Hartă */}
+          <div className="md:col-span-5 space-y-12">
             <div>
               <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
                 Contact
               </h2>
-              <div className="space-y-8 mb-12">
-                {/* Adresă cu Link Google Maps */}
+              <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -51,22 +50,22 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Stil Dark */}
+            {/* Hartă Integrată */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.441444165565!2d28.0289!3d44.3414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDIwJzI5LjAiTiAyOMKwMDEnNDQuMCJF!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro&q=Strada+Gheorghe+Doja+40+Cernavoda&layer=t&style=element:geometry|color:0x212121&style=element:labels.icon|visibility:off&style=element:labels.text.fill|color:0x757575&style=element:labels.text.stroke|color:0x212121&style=feature:administrative|element:geometry|color:0x757575&style=feature:poi|element:geometry|color:0x181818&style=feature:road|element:geometry.fill|color:0x2c2c2c&style=feature:road|element:geometry.stroke|color:0x181818&style=feature:water|element:geometry|color:0x000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.344473855561!2d28.0314!3d44.3384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba3f2c5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro&q=Strada+Gheorghe+Doja+40+Cernavoda&t=m&z=15&layer=c"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
                 allowFullScreen={true}
                 loading="lazy"
-                title="Locație S&D Design"
+                title="Locație"
               ></iframe>
             </div>
           </div>
 
-          {/* Coloana Dreaptă: Formular */}
-          <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm">
+          {/* Coloana Dreaptă: Formular (Caseta se închide acum după buton) */}
+          <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm h-fit">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             
             <form 
@@ -109,7 +108,6 @@ export const Contact: React.FC = () => {
                 ></textarea>
               </div>
               
-              {/* Buton Fixat: md:w-auto îl face scurt pe Desktop */}
               <div className="flex justify-start pt-4">
                 <button 
                   type="submit" 
