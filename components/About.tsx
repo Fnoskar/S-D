@@ -8,19 +8,19 @@ interface AboutImage {
 
 const aboutImages: AboutImage[] = [
   {
-    url: "https://picsum.photos/seed/engineer/800/1000",
+    url: "/poza 1.jpeg", 
     name: "Ing. Denis Bucatica"
   },
   {
-    url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop",
+    url: "/poza 2.jpeg", 
     name: "Echipa Tehnică"
   },
   {
-    url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
+    url: "/poza 3.jpeg", 
     name: "Vizită Șantier"
   },
   {
-    url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop", 
+    url: "/poza 4.jpeg", 
     name: "Proiect Finalizat"
   }
 ];
