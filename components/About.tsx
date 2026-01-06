@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface AboutImage {
@@ -38,6 +38,15 @@ export const About: React.FC = () => {
     setCurrentIndex((prev) => (prev - 1 + aboutImages.length) % aboutImages.length);
   };
 
+  // Logică pentru Auto-Play
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextImage();
+    }, 5000); // Schimbă la fiecare 5 secunde
+
+    return () => clearInterval(timer); // Curăță cronometrul când ieși de pe pagină
+  }, [currentIndex]); // Se resetează cronometrul la fiecare schimbare manuală
+
   const handleTouchStart = (e: React.TouchEvent) => setTouchStart(e.targetTouches[0].clientX);
   const handleTouchMove = (e: React.TouchEvent) => setTouchEnd(e.targetTouches[0].clientX);
 
@@ -70,7 +79,7 @@ export const About: React.FC = () => {
                 key={currentIndex}
               />
 
-              {/* Navigare Săgeți - Vizibile la hover pe desktop */}
+              {/* Săgeți Navigare */}
               <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 <button 
                   onClick={prevImage} 
