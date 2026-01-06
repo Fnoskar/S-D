@@ -8,7 +8,7 @@ interface AboutImage {
 
 const aboutImages: AboutImage[] = [
   {
-    url: "/poza.jpeg", 
+    url: "/poza 1.jpeg", 
     name: "Ing. Denis Bucatica"
   },
   {
@@ -38,12 +38,10 @@ export const About: React.FC = () => {
     setCurrentIndex((prev) => (prev - 1 + aboutImages.length) % aboutImages.length);
   };
 
-  // Logică pentru Auto-Play
   useEffect(() => {
     const timer = setInterval(() => {
       nextImage();
     }, 5000);
-
     return () => clearInterval(timer);
   }, [currentIndex]);
 
@@ -64,10 +62,10 @@ export const About: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          {/* Carousel Section - REPARAT PENTRU POZE MARI */}
-          <div className="md:col-span-5 relative group select-none">
+          {/* Carousel Section - MODIFICAT PENTRU 4:3 */}
+          <div className="md:col-span-6 relative group select-none">
             <div 
-              className="h-[450px] md:h-[600px] bg-black/5 w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center"
+              className="aspect-[4/3] bg-black/5 w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -75,7 +73,7 @@ export const About: React.FC = () => {
               <img 
                 src={aboutImages[currentIndex].url} 
                 alt={aboutImages[currentIndex].name} 
-                className="max-w-full max-h-full object-contain transition-opacity duration-500"
+                className="w-full h-full object-cover transition-opacity duration-500"
                 key={currentIndex}
               />
 
@@ -98,7 +96,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Text Content */}
-          <div className="md:col-span-6 md:col-start-7">
+          <div className="md:col-span-5 md:col-start-8">
             <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-8 leading-none">
               Despre <br/> Noi
             </h2>
@@ -107,25 +105,4 @@ export const About: React.FC = () => {
                 Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
               </p>
               <p>
-                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectăm normele în vigoare și transformăm viziunile în realitate.
-              </p>
-              
-              <div className="border-l-4 border-sd-black pl-6 py-4 my-8 bg-black/5">
-                 <blockquote className="text-xl italic text-black">
-                   "Arhitectura dă formă visului, iar structura îi oferă trăinicie în timp."
-                 </blockquote>
-              </div>
-              
-              <p className="text-sm uppercase tracking-widest text-gray-500 font-bold pt-4">
-                Constanța — Mangalia — Medgidia — Năvodari
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default About;
+                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectând cele mai noi normative în construc
