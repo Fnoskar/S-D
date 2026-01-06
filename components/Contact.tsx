@@ -73,7 +73,7 @@ export const Contact: React.FC = () => {
             <p>&copy; {new Date().getFullYear()} S&D Design Project.</p>
             <div className="relative group">
               <img 
-                src="/firma.jpeg" 
+                src="/firma.png" 
                 alt="Firma de Incredere 2019" 
                 className="h-16 w-auto opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               />
