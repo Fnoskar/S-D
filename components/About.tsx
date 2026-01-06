@@ -102,4 +102,28 @@ export const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-lg text-black font-light leading-relaxed">
               <p>
-                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border
+                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
+              </p>
+              <p>
+                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectând cele mai noi normative în construcții.
+              </p>
+              
+              <div className="border-l-4 border-sd-black pl-6 py-4 my-8 bg-black/5">
+                 <blockquote className="text-xl italic text-black">
+                   "Arhitectura dă formă visului, iar structura îi oferă trăinicie în timp."
+                 </blockquote>
+              </div>
+              
+              <p className="text-sm uppercase tracking-widest text-gray-500 font-bold pt-4">
+                Constanța — Mangalia — Medgidia — Năvodari
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
