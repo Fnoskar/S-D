@@ -34,7 +34,7 @@ export const Contact: React.FC = () => {
                   <Phone className="mt-1 text-sd-gray shrink-0" />
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Telefon</h4>
-                    <p className="text-xl">+40 700 000 000</p>
+                    <p className="text-xl">+40 729 661 175</p>
                   </div>
                 </div>
 
@@ -43,7 +43,7 @@ export const Contact: React.FC = () => {
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Email</h4>
                     <a href="mailto:contact@sd-design.ro" className="text-xl hover:text-sd-gray transition-colors">
-                      contact@sd-design.ro
+                      se7den@gmail.com
                     </a>
                   </div>
                 </div>
