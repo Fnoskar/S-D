@@ -71,7 +71,7 @@ export const Contact: React.FC = () => {
             {/* Badge Image - Ensure you have 'badge-firma-incredere.png' in your public folder */}
             <div className="relative group">
               <img 
-                src="/badge-firma-incredere.png" 
+                src="/firma de incredere.jpeg" 
                 alt="Firma de Incredere 2019" 
                 className="h-16 w-auto opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               />
