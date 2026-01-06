@@ -62,7 +62,7 @@ export const About: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          {/* Carousel Section - MODIFICAT PENTRU 4:3 */}
+          {/* Carousel Section - Format 4:3 Orizontal */}
           <div className="md:col-span-6 relative group select-none">
             <div 
               className="aspect-[4/3] bg-black/5 w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center"
@@ -77,7 +77,7 @@ export const About: React.FC = () => {
                 key={currentIndex}
               />
 
-              {/* Săgeți Navigare */}
+              {/* Navigare Săgeți */}
               <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 <button 
                   onClick={prevImage} 
@@ -102,7 +102,4 @@ export const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-lg text-black font-light leading-relaxed">
               <p>
-                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
-              </p>
-              <p>
-                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectând cele mai noi normative în construc
+                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border
