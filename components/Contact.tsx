@@ -8,39 +8,57 @@ export const Contact: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           
           {/* Coloana Stânga: Informații Contact */}
-          <div className="md:col-span-5">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
-              Contact
-            </h2>
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <MapPin className="mt-1 text-sd-gray" />
-                <div>
-                  <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Adresă</h4>
-                  <p className="text-xl">Constanța, România</p>
-                  <p className="text-gray-400">Disponibil în tot județul</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <Phone className="mt-1 text-sd-gray" />
-                <div>
-                  <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Telefon</h4>
-                  <p className="text-xl">+40 700 000 000</p>
-                </div>
-              </div>
+         {/* Coloana Stânga: Informații Contact + Hartă Integrată */}
+<div className="md:col-span-5 flex flex-col justify-between">
+  <div>
+    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
+      Contact
+    </h2>
+    <div className="space-y-8 mb-12">
+      {/* Adresă Interactivă */}
+      <div className="flex items-start gap-4 group cursor-pointer">
+        <MapPin className="mt-1 text-sd-gray shrink-0 group-hover:text-white transition-colors" />
+        <div>
+          <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Adresă</h4>
+          <p className="text-xl group-hover:text-sd-gray transition-colors">Strada Gheorghe Doja Nr. 40</p>
+          <p className="text-gray-400 group-hover:text-sd-gray transition-colors">Cernavodă, Constanța</p>
+        </div>
+      </div>
+      
+      <div className="flex items-start gap-4">
+        <Phone className="mt-1 text-sd-gray shrink-0" />
+        <div>
+          <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Telefon</h4>
+          <p className="text-xl">+40 700 000 000</p>
+        </div>
+      </div>
 
-              <div className="flex items-start gap-4">
-                <Mail className="mt-1 text-sd-gray" />
-                <div>
-                  <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Email</h4>
-                  <a href="mailto:contact@sd-design.ro" className="text-xl hover:text-gray-300 transition-colors">
-                    contact@sd-design.ro
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="flex items-start gap-4">
+        <Mail className="mt-1 text-sd-gray shrink-0" />
+        <div>
+          <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Email</h4>
+          <a href="mailto:contact@sd-design.ro" className="text-xl hover:text-sd-gray transition-colors">
+            contact@sd-design.ro
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* HARTA INTEGRATĂ - Va fi vizibilă permanent aici */}
+  <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl relative">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.336444855734!2d28.02844887664871!3d44.34421110746654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba26f2f986221f%3A0x7d678563c6d59b20!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83%20905200!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
+      width="100%"
+      height="100%"
+      style={{ border: 0, filter: 'grayscale(1) invert(0.92) contrast(1.2)' }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Harta Locație S&D Design"
+    ></iframe>
+  </div>
+</div>
 
           {/* Coloana Dreaptă: Formular Funcțional */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12">
