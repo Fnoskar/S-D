@@ -46,12 +46,14 @@ export const Contact: React.FC = () => {
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             
-            {/* INLOCUIESTE LINK-UL DE MAI JOS CU CEL DE LA FORMSPREE */}
             <form 
               action="https://formspree.io/f/xojvgazd" 
               method="POST"
               className="space-y-6"
             >
+              {/* Câmp ascuns pentru a preveni spam-ul */}
+              <input type="text" name="_gotcha" style={{ display: 'none' }} />
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs uppercase tracking-widest text-gray-400 mb-2">Nume</label>
