@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
         <img 
           src="/WhatsApp Image 2026-01-06 at 10.58.30.jpeg"
           alt="Structură beton armat" 
-          className="w-full h-full object-cover filter grayscale contrast-125"
+          className="w-full h-full object-cover filter contrast-125"
         />
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
