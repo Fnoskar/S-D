@@ -7,6 +7,7 @@ export const Contact: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           
+          {/* Coloana Stânga: Informații Contact */}
           <div className="md:col-span-5">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
               Contact
@@ -41,6 +42,7 @@ export const Contact: React.FC = () => {
             </div>
           </div>
 
+          {/* Coloana Dreaptă: Formular */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
@@ -63,10 +65,9 @@ export const Contact: React.FC = () => {
               </button>
             </form>
           </div>
-
         </div>
 
-        {/* FOOTER AREA */}
+        {/* Secțiunea Footer / Poza și Copyright */}
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p>&copy; {new Date().getFullYear()} S&D Design Project.</p>
@@ -76,3 +77,17 @@ export const Contact: React.FC = () => {
                 alt="Firma de Incredere 2019" 
                 className="h-16 w-auto opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               />
+            </div>
+          </div>
+          <div className="text-center md:text-right">
+            <p className="text-gray-500">Toate drepturile rezervate.</p>
+            <p className="mt-2">Ing. Denis Bucatica</p>
+          </div>
+        </div>
+
+      </div> {/* Închide container principal */}
+    </section> /* Închide section */
+  );
+};
+
+export default Contact;
