@@ -65,24 +65,14 @@ export const Contact: React.FC = () => {
           </div>
 
         </div>
+
+        {/* FOOTER AREA */}
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p>&copy; {new Date().getFullYear()} S&D Design Project.</p>
-            {/* Badge Image - Ensure you have 'badge-firma-incredere.png' in your public folder */}
             <div className="relative group">
               <img 
                 src="/firma.jpeg" 
                 alt="Firma de Incredere 2019" 
                 className="h-16 w-auto opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               />
-            </div>
-        <div className="mt-24 pt-8 border-t border-gray-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} S&D Design Project. Toate drepturile rezervate.</p>
-          <p className="mt-2 md:mt-0">Ing. Denis Bucatica</p>
-      </div>
-    </div>
-  </section>
-  );
-};
-
-export default Contact;
