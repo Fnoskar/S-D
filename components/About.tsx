@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface AboutImage {
-  url: string;
+  url: string; 
   name: string;
 }
 
@@ -42,10 +42,10 @@ export const About: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       nextImage();
-    }, 5000); // Schimbă la fiecare 5 secunde
+    }, 5000);
 
-    return () => clearInterval(timer); // Curăță cronometrul când ieși de pe pagină
-  }, [currentIndex]); // Se resetează cronometrul la fiecare schimbare manuală
+    return () => clearInterval(timer);
+  }, [currentIndex]);
 
   const handleTouchStart = (e: React.TouchEvent) => setTouchStart(e.targetTouches[0].clientX);
   const handleTouchMove = (e: React.TouchEvent) => setTouchEnd(e.targetTouches[0].clientX);
@@ -64,10 +64,10 @@ export const About: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          {/* Carousel Section */}
+          {/* Carousel Section - REPARAT PENTRU POZE MARI */}
           <div className="md:col-span-5 relative group select-none">
             <div 
-              className="aspect-[3/4] bg-gray-200 w-full relative overflow-hidden shadow-2xl rounded-sm"
+              className="h-[450px] md:h-[600px] bg-black/5 w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -75,7 +75,7 @@ export const About: React.FC = () => {
               <img 
                 src={aboutImages[currentIndex].url} 
                 alt={aboutImages[currentIndex].name} 
-                className="w-full h-full object-cover transition-opacity duration-500"
+                className="max-w-full max-h-full object-contain transition-opacity duration-500"
                 key={currentIndex}
               />
 
@@ -107,7 +107,7 @@ export const About: React.FC = () => {
                 Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
               </p>
               <p>
-                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectând cele mai noi normative în construcții. 
+                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectăm normele în vigoare și transformăm viziunile în realitate.
               </p>
               
               <div className="border-l-4 border-sd-black pl-6 py-4 my-8 bg-black/5">
