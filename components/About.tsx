@@ -4,24 +4,24 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 interface AboutImage {
   url: string;
   name: string;
-  role: string;
 }
 
 const aboutImages: AboutImage[] = [
   {
     url: "https://picsum.photos/seed/engineer/800/1000",
-    name: "Ing. Denis Bucatica",
-    role: "Administrator & Lead Engineer"
+    name: "Ing. Denis Bucatica"
   },
   {
     url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop",
-    name: "Echipa Tehnică",
-    role: "Proiectare & Arhitectură"
+    name: "Echipa Tehnică"
   },
   {
     url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
-    name: "Vizită Șantier",
-    role: "Supraveghere Execuție"
+    name: "Vizită Șantier"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop", 
+    name: "Proiect Finalizat"
   }
 ];
 
@@ -53,17 +53,16 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="py-24 bg-sd-gray text-sd-black">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
           {/* Carousel Section */}
           <div className="md:col-span-5 relative group select-none">
             <div 
-              className="aspect-[3/4] bg-gray-200 w-full relative overflow-hidden shadow-2xl"
+              className="aspect-[3/4] bg-gray-200 w-full relative overflow-hidden shadow-2xl rounded-sm"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
             >
-              {/* Image */}
               <img 
                 src={aboutImages[currentIndex].url} 
                 alt={aboutImages[currentIndex].name} 
@@ -71,39 +70,20 @@ export const About: React.FC = () => {
                 key={currentIndex}
               />
 
-              {/* Navigation Arrows */}
-              <div className="absolute inset-0 flex items-center justify-between p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                <button onClick={prevImage} className="pointer-events-auto bg-black/50 text-white p-2 hover:bg-black transition-colors rounded-full">
-                  <ChevronLeft size={24} />
+              {/* Navigare Săgeți - Vizibile la hover pe desktop */}
+              <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <button 
+                  onClick={prevImage} 
+                  className="pointer-events-auto bg-black/40 text-white p-2 hover:bg-black/60 transition-colors rounded-full backdrop-blur-sm"
+                >
+                  <ChevronLeft size={28} />
                 </button>
-                <button onClick={nextImage} className="pointer-events-auto bg-black/50 text-white p-2 hover:bg-black transition-colors rounded-full">
-                  <ChevronRight size={24} />
+                <button 
+                  onClick={nextImage} 
+                  className="pointer-events-auto bg-black/40 text-white p-2 hover:bg-black/60 transition-colors rounded-full backdrop-blur-sm"
+                >
+                  <ChevronRight size={28} />
                 </button>
-              </div>
-
-              {/* Instagram Style Dots */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                {aboutImages.map((_, index) => (
-                  <div 
-                    key={index}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Caption Info */}
-            <div className="bg-sd-black text-white p-6 w-full flex justify-between items-center">
-              <div>
-                <p className="font-bold text-lg uppercase tracking-wider" key={`n-${currentIndex}`}>
-                  {aboutImages[currentIndex].name}
-                </p>
-                <p className="text-xs uppercase tracking-widest text-gray-400" key={`r-${currentIndex}`}>
-                  {aboutImages[currentIndex].role}
-                </p>
-              </div>
-              <div className="text-xs font-mono text-gray-500">
-                0{currentIndex + 1} / 0{aboutImages.length}
               </div>
             </div>
           </div>
