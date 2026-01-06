@@ -79,8 +79,10 @@ export const Contact: React.FC = () => {
         <div className="mt-24 pt-8 border-t border-gray-800 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} S&D Design Project. Toate drepturile rezervate.</p>
           <p className="mt-2 md:mt-0">Ing. Denis Bucatica</p>
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 };
+
+export default Contact;
