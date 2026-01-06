@@ -8,7 +8,7 @@ interface AboutImage {
 
 const aboutImages: AboutImage[] = [
   {
-    url: "/poza 1.jpeg", 
+    url: "/poza.jpeg", 
     name: "Ing. Denis Bucatica"
   },
   {
