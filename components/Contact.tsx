@@ -7,7 +7,7 @@ export const Contact: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           
-          {/* Coloana Stânga: Informații Contact + Hartă */}
+          {/* Coloana Stânga: Informații Contact + Hartă Integrată */}
           <div className="md:col-span-5 flex flex-col justify-between">
             <div>
               <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
@@ -52,9 +52,9 @@ export const Contact: React.FC = () => {
             </div>
 
             {/* Hartă Integrată - Stil Dark */}
-            <div className="w-full h-[250px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
+            <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8687740673395!2d28.028710376646852!3d44.33315890753556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b06060c576576b%3A0x7e7b396788226078!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1704580000000!5m2!1sro!2sro"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.441444165565!2d28.0289!3d44.3414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDIwJzI5LjAiTiAyOMKwMDEnNDQuMCJF!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro&q=Strada+Gheorghe+Doja+40+Cernavoda&layer=t&style=element:geometry|color:0x212121&style=element:labels.icon|visibility:off&style=element:labels.text.fill|color:0x757575&style=element:labels.text.stroke|color:0x212121&style=feature:administrative|element:geometry|color:0x757575&style=feature:poi|element:geometry|color:0x181818&style=feature:road|element:geometry.fill|color:0x2c2c2c&style=feature:road|element:geometry.stroke|color:0x181818&style=feature:water|element:geometry|color:0x000000"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
@@ -108,3 +108,34 @@ export const Contact: React.FC = () => {
                   placeholder="Detalii despre proiect..."
                 ></textarea>
               </div>
+              
+              {/* Buton Fixat: md:w-auto îl face scurt pe Desktop */}
+              <div className="flex justify-start pt-4">
+                <button 
+                  type="submit" 
+                  className="bg-white text-black px-10 py-4 uppercase tracking-widest font-bold text-sm hover:bg-sd-gray transition-all w-full md:w-auto shadow-lg"
+                >
+                  Trimite Solicitare
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <p>© {new Date().getFullYear()} S&D Design Project.</p>
+            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto grayscale opacity-50" />
+          </div>
+          <div className="text-center md:text-right">
+            <p className="text-gray-500">Toate drepturile rezervate.</p>
+            <p className="mt-2">Ing. Denis Bucatica</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
