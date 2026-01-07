@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
           {projectsData.map((project, index) => (
             <div key={project.id} className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-24' : ''}`}>
-              <div className="relative overflow-hidden mb-6 aspect-[4/5] md:aspect-[4/3] bg-gray-100">
+             <div className="aspect-[4/3] w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center" >
                 <img 
                   src={project.imageUrl} 
                   alt={project.title} 
