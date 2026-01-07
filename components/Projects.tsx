@@ -9,7 +9,7 @@ const projectsData: Project[] = [
     category: "Rezidențial",
     location: "Constanța",
     year: "2023",
-    imageUrl: "Screenshot 2025-12-24 211318.jpg",
+    imageUrl: "bloc bucuresti.jpeg",
     description: "Structură în cadre de beton armat, regim P+8E."
   },
   {
