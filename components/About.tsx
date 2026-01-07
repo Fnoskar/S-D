@@ -105,7 +105,7 @@ export const About: React.FC = () => {
                 Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
               </p>
               <p>
-                Noi am format o echipă de ingineri cu peste 15 ani de experiență, timp în care am învățat să abordăm cu încredere orice provocare în construcții civile, industriale sau agricole, folosind printre cele mai bune echipamente de pe piață pentru a ne asigura că rezultatul final este <strong className="font-bold border-b-2 border-sd-black"> impecabil </strong> 
+                Noi am format o echipă de ingineri cu peste 15 ani de experiență, timp în care am învățat să abordăm cu încredere orice provocare în construcții civile, industriale sau agricole, folosind printre cele mai bune echipamente de pe piață pentru a ne asigura că rezultatul final este <span className="italic">impecabil</span> 
               </p>
                 <p>
               Pentru noi, respectarea normativelor și a rigorilor legii nu este doar o bifă birocratică, ci modul nostru de a-ți garanta siguranța și liniștea în fiecare proiect pe care îl construim împreună.
