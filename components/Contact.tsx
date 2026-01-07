@@ -53,19 +53,19 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Centrată spre capătul străzii (Nr. 40) */}
-           {/* Hartă Integrată - Poziționată fix la Nr. 40 */}
-<div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.835!2d28.031!3d44.337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b036f069905963%3A0xc3f83d0382046424!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro"
-    width="100%"
-    height="100%"
-    style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
-    allowFullScreen={true}
-    loading="lazy"
-    title="Locație Precisă S&D Design"
-  ></iframe>
-</div>
+            {/* Hartă Integrată - Centrată la Nr. 40 */}
+            <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.5645513264426!2d28.0336208!3d44.3353955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba25656519f96b%3A0x88989508892f3366!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1711234567890!5m2!1sro!2sro&q=44.3353955,28.0336208"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
+                allowFullScreen={true}
+                loading="lazy"
+                title="Locație Precisă Nr. 40"
+              ></iframe>
+            </div>
+          </div>
 
           {/* Coloana Dreaptă: Formular */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm h-fit">
