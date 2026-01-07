@@ -75,9 +75,9 @@ export const Projects: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 border-b border-black pb-8 flex flex-col md:flex-row justify-between items-end">
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase text-black">
-            Proiecte Recente
+            Proiecte Reprezentative
           </h2>
-          <span className="text-sm uppercase tracking-widest mt-4 md:mt-0">Portofoliu Extins</span>
+          <span className="text-sm uppercase tracking-widest mt-4 md:mt-0">Am colaborat la:</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
