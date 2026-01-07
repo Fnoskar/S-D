@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
 interface AboutImage {
   url: string; 
@@ -58,14 +58,14 @@ export const About: React.FC = () => {
   };
 
   return (
-    <section id="about" className="py-24 bg-sd-gray text-sd-black">
+    <section id="about" className="py-24 bg-white text-black">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           
           {/* Carousel Section - Format 4:3 Orizontal */}
           <div className="md:col-span-6 relative group select-none">
             <div 
-              className="aspect-[4/3] bg-black/5 w-full relative overflow-hidden shadow-2xl rounded-sm flex items-center justify-center"
+              className="aspect-[4/3] bg-gray-100 w-full relative overflow-hidden rounded-sm flex items-center justify-center shadow-sm"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -83,40 +83,52 @@ export const About: React.FC = () => {
                   onClick={prevImage} 
                   className="pointer-events-auto bg-black/40 text-white p-2 hover:bg-black/60 transition-colors rounded-full backdrop-blur-sm"
                 >
-                  <ChevronLeft size={28} />
+                  <ChevronLeft size={24} />
                 </button>
                 <button 
                   onClick={nextImage} 
                   className="pointer-events-auto bg-black/40 text-white p-2 hover:bg-black/60 transition-colors rounded-full backdrop-blur-sm"
                 >
-                  <ChevronRight size={28} />
+                  <ChevronRight size={24} />
                 </button>
+              </div>
+
+              {/* Indicator Nume Poză */}
+              <div className="absolute bottom-4 left-4 bg-black/50 text-white text-xs uppercase tracking-widest px-3 py-1 backdrop-blur-md">
+                {aboutImages[currentIndex].name}
               </div>
             </div>
           </div>
 
           {/* Text Content */}
-          <div className="md:col-span-5 md:col-start-8">
-            <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-8 leading-none">
-              Despre <br/> Noi
+          <div className="md:col-span-6">
+            <h2 className="text-sm uppercase tracking-[0.3em] text-gray-400 font-semibold mb-8">
+              Cine suntem
             </h2>
-            <div className="space-y-6 text-lg text-black font-light leading-relaxed">
-              <p>
-                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în <strong className="font-bold border-b-2 border-sd-black">inginerie structurală</strong> și <strong className="font-bold border-b-2 border-sd-black">arhitectură</strong>.
-              </p>
-              <p>
-                Sub coordonarea inginerului <strong>Denis Bucatica</strong>, oferim soluții optimizate, respectând cele mai noi normative în construcții.
+            
+            <div className="space-y-8">
+              {/* Prima Propoziție - Impact Vizual */}
+              <p className="text-2xl md:text-4xl font-medium leading-tight tracking-tight text-black">
+                Suntem un birou de proiectare completă cu sediul în Constanța, dedicat excelenței în inginerie structurală și arhitectură.
               </p>
               
-              <div className="border-l-4 border-sd-black pl-6 py-4 my-8 bg-black/5">
-                 <blockquote className="text-xl italic text-black">
-                   "Arhitectura dă formă visului, iar structura îi oferă trăinicie în timp."
-                 </blockquote>
+              {/* Paragrafele Umante / Personale */}
+              <div className="space-y-6 text-lg text-gray-600 leading-relaxed text-justify">
+                <p>
+                  Noi am format o echipă de ingineri cu peste 15 ani de experiență, timp în care am învățat să abordăm cu încredere orice provocare în construcții civile, industriale sau agricole, folosind cele mai bune echipamente de pe piață pentru a ne asigura că rezultatul final este impecabil.
+                </p>
+                
+                <p>
+                  Pentru noi, respectarea normativelor și a rigorilor legii nu este doar o bifă birocratică, ci modul nostru de a-ți garanta siguranța și liniștea în fiecare proiect pe care îl construim împreună.
+                </p>
+
+                {/* Footer Localități */}
+                <div className="pt-6 border-t border-gray-100">
+                  <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-bold">
+                    Activitate extinsă: Constanța — Mangalia — Medgidia — Năvodari
+                  </p>
+                </div>
               </div>
-              
-              <p className="text-sm uppercase tracking-widest text-gray-500 font-bold pt-4">
-                Constanța — Mangalia — Medgidia — Năvodari
-              </p>
             </div>
           </div>
 
