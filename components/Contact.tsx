@@ -1,4 +1,4 @@
-import React from 'react';
+vsimport React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 export const Contact: React.FC = () => {
@@ -14,6 +14,7 @@ export const Contact: React.FC = () => {
                 Contact
               </h2>
               <div className="space-y-8">
+                {/* Adresă cu marker la capătul străzii (Nr. 40) */}
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -42,7 +43,7 @@ export const Contact: React.FC = () => {
                   <Mail className="mt-1 text-sd-gray shrink-0" />
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Email</h4>
-                    <a href="mailto:contact@sd-design.ro" className="text-xl hover:text-sd-gray transition-colors">
+                    <a href="mailto:se7den@gmail.com" className="text-xl hover:text-sd-gray transition-colors">
                       se7den@gmail.com
                     </a>
                   </div>
@@ -50,21 +51,21 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată */}
+            {/* Hartă Integrată - Centrată la Nr. 40 */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.344473855561!2d28.0314!3d44.3384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba3f2c5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro&q=Strada+Gheorghe+Doja+40+Cernavoda&t=m&z=15&layer=c"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.4116514749452!2d28.03362092164803!3d44.33777555627231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba26f28148b59d%3A0xe5a9e3247078326e!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83%20905200!5e0!3m2!1sro!2sro!4v1715243120000!5m2!1sro!2sro"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
                 allowFullScreen={true}
                 loading="lazy"
-                title="Locație"
+                title="Locație Nr. 40"
               ></iframe>
             </div>
           </div>
 
-          {/* Coloana Dreaptă: Formular (Caseta se închide acum după buton) */}
+          {/* Coloana Dreaptă: Formular */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm h-fit">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             
