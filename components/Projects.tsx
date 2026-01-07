@@ -13,7 +13,7 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "Divertiland",
+    title: "DIVERTILAND",
     category: "Special",
     location: "Chiajna, jud. Ilfov",
     imageUrl: "divertiland.jpg",
@@ -49,7 +49,7 @@ const projectsData: Project[] = [
     category: "Civil",
     location: "Cernavodă, jud. Constanța",
     imageUrl: "gradinita.jpg",
-    description: "Reabilitare și amenajare a spațiilor verzi exterioare. Planul de modernizare a inclus sistematizarea terenului și integrarea structurilor ușoare de susținere, asigurând o organizare optimă a zonelor de joacă și recreere."
+    description: "Reabilitare și amenajare a spațiilor verzi exterioare. Planul de modernizare a inclus sistematizarea terenului și integrarea locurilor de joacă pentru copii, asigurând o experiență sigură și optimizată pentru utilizarea spațiului exterior."
   },
   {
     id: 7,
@@ -74,13 +74,13 @@ export const Projects: React.FC = () => {
     <section id="projects" className="py-24 bg-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 border-b border-black pb-8 flex flex-col md:flex-row justify-between items-end">
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase text-sd-black">
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase text-black">
             Proiecte Recente
           </h2>
           <span className="text-sm uppercase tracking-widest mt-4 md:mt-0">Portofoliu Extins</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
           {projectsData.map((project, index) => (
             <div key={project.id} className={`group cursor-pointer ${index % 2 !== 0 ? 'md:mt-24' : ''}`}>
               <div className="relative overflow-hidden mb-6 aspect-[4/5] md:aspect-[4/3] bg-gray-100">
@@ -91,13 +91,23 @@ export const Projects: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
               </div>
+              
               <div className="flex justify-between items-start border-t border-gray-200 pt-4">
-                <div>
-                  <h3 className="text-xl md:text-2xl font-bold uppercase tracking-tight mb-1">{project.title}</h3>
-                  <p className="text-sm text-gray-500 uppercase tracking-wide">{project.location} / {project.year}</p>
-                  <p className="text-gray-600 mt-2 max-w-md">{project.description}</p>
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-bold uppercase tracking-tight mb-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-400 uppercase tracking-wide mb-3">
+                    {project.location}
+                  </p>
+                  {/* Am eliminat max-w-md pentru a lăsa textul să ocupe toată lățimea coloanei */}
+                  <p className="text-gray-600 text-base leading-relaxed text-justify">
+                    {project.description}
+                  </p>
                 </div>
-                <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                
+                {/* Am adăugat flex-shrink-0 pentru a proteja iconița de textul lung */}
+                <ArrowUpRight className="flex-shrink-0 ml-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
             </div>
           ))}
