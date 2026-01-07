@@ -1,4 +1,4 @@
-import React from 'react';
+simport React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 export const Contact: React.FC = () => {
@@ -53,8 +53,7 @@ export const Contact: React.FC = () => {
 
             {/* Hartă Integrată - Centrată fix pe S&D Design Project S.R.L. */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2345!2d28.0326!3d44.3371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b0dd9518dd95f3%3A0x27a0c24da2a2d46d!2sS.C.%20S%26D%20DESIGN%20PROJECT%20SRL!5e0!3m2!1sro!2sro!4v1715000000000!5m2!1sro!2sro&dark_mode=true"
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.1456892961282!2d28.040819261132253!3d44.34007934646232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba9dd5181d95f3%3A0x37a0c24da2dad36d!2sS.C.%20S%26D%20DESIGN%20PROJECT%20SRL!5e0!3m2!1sro!2sro!4v1767784295486!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
