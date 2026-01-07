@@ -126,11 +126,11 @@ export const Contact: React.FC = () => {
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p>© {new Date().getFullYear()} S&D Design Project.</p>
-            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 grayscale invert" />
+            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 invert" />
           </div>
           <div className="text-center md:text-right">
             <p className="text-gray-500">Toate drepturile rezervate.</p>
-            <p className="mt-2 text-white">Ing. Denis Bucatica</p>
+
           </div>
         </div>
       </div>
