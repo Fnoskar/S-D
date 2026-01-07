@@ -136,4 +136,4 @@ export const Contact: React.FC = () => {
   );
 };
 
-export default Contact;. PUNE MARKERUL LA NR.40, ADICA LA CAPATUL celalalt al strazii
+export default Contact;
