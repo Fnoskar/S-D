@@ -7,9 +7,9 @@ const projectsData: Project[] = [
     id: 1,
     title: "IMOBIL REZIDENȚIAL 2S+P+6E",
     category: "Rezidențial",
-    location: "București Sectorul 1",
+    location: "București, Sectorul 1",
     imageUrl: "bloc bucuresti.jpeg",
-    description: "Proiectare structurală completă și calcul structural pentru imobil cu regim de înălțime 2S+P+6E. Structură în cadre de beton armat."
+    description: "Proiectare structurală și calcul pentru un imobil cu regim de înălțime ridicat. Structura este realizată în cadre de beton armat, fiind dimensionată pentru a asigura stabilitatea ansamblului și integrarea locurilor de parcare în cele două niveluri de subsol."
   },
   {
     id: 2,
@@ -17,23 +17,23 @@ const projectsData: Project[] = [
     category: "Special",
     location: "Chiajna, jud. Ilfov",
     imageUrl: "divertiland.jpg",
-    description: "Proiectare structuri speciale pentru tobogane acvatice. Concepute pentru siguranță și durabilitate."
+    description: "Proiectare structuri speciale pentru tobogane acvatice. Activitatea a constat în dimensionarea stâlpilor metalici de susținere și a fundațiilor aferente, structura fiind gândită pentru a rezista la utilizare intensă și la sarcinile dinamice specifice echipamentelor de agrement."
   },
   {
     id: 3,
-    title: "OMV ",
+    title: "OMV",
     category: "Industrial",
     location: "Burcioaia, jud. Vrancea",
     imageUrl: "omv burcioaia.jpeg",
-    description: "Dimensionare și proiectare structurală estacade (piperacks) pentru obiective industriale OMV. Documentația a vizat configurarea și proiectarea cadrelor metalice pentru 5 tipuri de structuri și a elementelor de fundare aferente acestora. "
+    description: "Dimensionare și proiectare structurală estacade (piperacks) pentru obiective industriale OMV. Activitatea a inclus configurarea cadrelor metalice pentru 5 tipuri de structuri și a elementelor de fundare, asigurând susținerea și continuitatea rețelelor industriale de conducte."
   },
   {
     id: 4,
-    title: "REABLITIARE SI MODERNIZARE STAȚIE DE EPURARE BUCURESTI-GLINA",
+    title: "REABILITARE ȘI MODERNIZARE STAȚIE DE EPURARE BUCUREȘTI-GLINA",
     category: "Reabilitare",
     location: "Glina, jud. Ilfov",
     imageUrl: "statie de epurare.jpeg",
-    description: "Proiectare structurală pentru bazine de aerare din beton armat monolit, în cadrul Stației de Epurare București-Glina. Soluție tehnică bazată pe radier general de 65 cm și structură îngropată în proporție de 80% sub nivelul terenului."
+    description: "Proiectare structurală pentru bazine de aerare realizate din beton armat monolit. Soluția tehnică include un radier general de 65 cm și o structură îngropată în proporție de 80%, fiind adaptată pentru rezistență ridicată în medii cu umiditate constantă."
   },
   {
     id: 5,
@@ -41,15 +41,15 @@ const projectsData: Project[] = [
     category: "Civil",
     location: "Ștefan cel Mare, jud. Constanța",
     imageUrl: "statie itp.jpeg",
-    description: "Stație ITP: proiectare integrală și gestionare completă a documentației (CU, DTAC, PTH). Structură metalică dimensionată pentru integrarea fluxului auto și a echipamentelor specifice de verificare."
+    description: "Proiectare integrală și gestionare a documentației tehnice pentru construcție civilă. Structura metalică a fost dimensionată pentru a acomoda fluxul auto și pentru a permite montarea echipamentelor specifice de verificare tehnică."
   },
   {
     id: 6,
     title: "GRĂDINIȚA NR. 4",
     category: "Civil",
     location: "Cernavodă, jud. Constanța",
-    imageUrl: "https://picsum.photos/seed/apartments_modern/800/600",
-    description: "Reabilitare spații verzi: proiectare și gestionare a documentației tehnice pentru modernizarea zonelor exterioare"
+    imageUrl: "gradinita.jpg",
+    description: "Reabilitare și amenajare a spațiilor verzi exterioare. Planul de modernizare a inclus sistematizarea terenului și integrarea structurilor ușoare de susținere, asigurând o organizare optimă a zonelor de joacă și recreere."
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ const projectsData: Project[] = [
     category: "Industrial",
     location: "Cernavodă, jud. Constanța",
     imageUrl: "hala leucoplast.jpeg",
-    description: "Hală metalică: proiectare structurală și dimensionare pentru fazele DTAC și PTH. Structură metalică optimizată pentru eficiența consumului de oțel, adaptată încărcărilor tehnologice și condițiilor de teren. "
+    description: "Proiectare structurală și dimensionare pentru obiectiv industrial. Structura metalică a fost configurată pentru a optimiza consumul de oțel, incluzând cadrele principale și sistemele de fundații adaptate sarcinilor tehnologice din incintă."
   },
   {
     id: 8,
@@ -65,7 +65,7 @@ const projectsData: Project[] = [
     category: "Comercial",
     location: "Vălenii de Munte, jud. Prahova", 
     imageUrl: "saintgobain.jpg",
-    description: "Amenajare interioară și configurare a zonelor de prezentare. Compartimentarea spațiului și instalarea elementelor decorative au fost realizate pentru a asigura continuitatea parcursului interior și delimitarea zonelor de interes ."
+    description: "Amenajare interioară și configurare a zonelor de prezentare. Compartimentarea spațiului și instalarea elementelor decorative au fost realizate pentru a asigura continuitatea parcursului interior și delimitarea clară a zonelor de interes."
   }
 ];
 
