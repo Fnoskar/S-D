@@ -16,7 +16,7 @@ const projectsData: Project[] = [
     title: "Divertiland",
     category: "Special",
     location: "Chiajna, jud. Ilfov",
-    imageUrl: "divertiland.jpeg",
+    imageUrl: "divertiland.jpg",
     description: "Proiectare structuri speciale pentru tobogane acvatice. Concepute pentru siguranță și durabilitate."
   },
   {
@@ -33,7 +33,7 @@ const projectsData: Project[] = [
     category: "Reabilitare",
     location: "Glina, jud. Ilfov",
     imageUrl: "statie de epurare.jpeg",
-    description: "Proiectare structurală pentru bazine de aerare din beton armat monolit, în cadrul Stației de Epurare București-Glina.."
+    description: "Proiectare structurală pentru bazine de aerare din beton armat monolit, în cadrul Stației de Epurare București-Glina. Soluție tehnică bazată pe radier general de 65 cm și structură îngropată în proporție de 80% sub nivelul terenului."
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const projectsData: Project[] = [
     id: 6,
     title: "GRĂDINIȚA NR. 4",
     category: "Civil",
-    location: "Cernavodă",
+    location: "Cernavodă, jud. Constanța",
     imageUrl: "https://picsum.photos/seed/apartments_modern/800/600",
     description: "Reabilitare spații verzi: proiectare și gestionare a documentației tehnice pentru modernizarea zonelor exterioare"
   },
@@ -55,17 +55,17 @@ const projectsData: Project[] = [
     id: 7,
     title: "HALĂ METALICĂ WELDE",
     category: "Industrial",
-    location: "Cernavodă",
+    location: "Cernavodă, jud. Constanța",
     imageUrl: "hala leucoplast.jpeg",
-    description: "Hală metalică: proiectare structurală și dimensionare pentru fazele DTAC și PTH."
+    description: "Hală metalică: proiectare structurală și dimensionare pentru fazele DTAC și PTH. Structură metalică optimizată pentru eficiența consumului de oțel, adaptată încărcărilor tehnologice și condițiilor de teren. "
   },
   {
     id: 8,
     title: "SHOWROOM SAINT GOBAIN",
     category: "Comercial",
     location: "Vălenii de Munte, jud. Prahova", 
-    imageUrl: "saintgobain.jpeg",
-    description: "Structură metalică ușoară, grinzi cu zăbrele și pereți cortină."
+    imageUrl: "saintgobain.jpg",
+    description: "Amenajare interioară și configurare a zonelor de prezentare. Compartimentarea spațiului și instalarea elementelor decorative au fost realizate pentru a asigura continuitatea parcursului interior și delimitarea zonelor de interes ."
   }
 ];
 
