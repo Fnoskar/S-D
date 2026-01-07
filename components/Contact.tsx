@@ -1,4 +1,4 @@
-vsimport React from 'react';
+import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 export const Contact: React.FC = () => {
@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
                 Contact
               </h2>
               <div className="space-y-8">
-                {/* Adresă cu marker la capătul străzii (Nr. 40) */}
+                {/* Adresă */}
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -31,6 +31,7 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
                 
+                {/* Telefon */}
                 <div className="flex items-start gap-4">
                   <Phone className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -39,6 +40,7 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Email */}
                 <div className="flex items-start gap-4">
                   <Mail className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -51,16 +53,16 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Centrată la Nr. 40 */}
+            {/* Hartă Integrată - Centrată spre capătul străzii (Nr. 40) */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.4116514749452!2d28.03362092164803!3d44.33777555627231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba26f28148b59d%3A0xe5a9e3247078326e!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83%20905200!5e0!3m2!1sro!2sro!4v1715243120000!5m2!1sro!2sro"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.7857102558694!2d28.026786!3d44.338241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba89408643807d%3A0x6a0a0a0a0a0a0a0a!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro&q=44.338241,28.026786&hl=ro&z=17"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
                 allowFullScreen={true}
                 loading="lazy"
-                title="Locație Nr. 40"
+                title="Locatie S&D Design"
               ></iframe>
             </div>
           </div>
@@ -125,11 +127,11 @@ export const Contact: React.FC = () => {
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p>© {new Date().getFullYear()} S&D Design Project.</p>
-            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50" />
+            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 grayscale invert" />
           </div>
           <div className="text-center md:text-right">
             <p className="text-gray-500">Toate drepturile rezervate.</p>
-            <p className="mt-2">Ing. Denis Bucatica</p>
+            <p className="mt-2 text-white">Ing. Denis Bucatica</p>
           </div>
         </div>
       </div>
