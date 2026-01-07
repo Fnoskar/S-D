@@ -5,74 +5,66 @@ import { ArrowUpRight } from 'lucide-react';
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Complex Rezidențial Tomis",
+    title: "IMOBIL REZIDENȚIAL 2S+P+6E",
     category: "Rezidențial",
-    location: "Constanța",
-    year: "2023",
+    location: "București Sectorul 1",
     imageUrl: "bloc bucuresti.jpeg",
-    description: "Structură în cadre de beton armat, regim P+8E."
+    description: "Proiectare structurală completă și calcul structural pentru imobil cu regim de înălțime 2S+P+6E. Structură în cadre de beton armat."
   },
   {
     id: 2,
-    title: "Hală Industrială Logistică",
-    category: "Industrial",
-    location: "Agigea",
-    year: "2022",
-    imageUrl: "https://picsum.photos/seed/construct2/800/800",
-    description: "Structură metalică cu deschideri mari pentru depozitare."
+    title: "Divertiland",
+    category: "Special",
+    location: "Chiajna, jud. Ilfov",
+    imageUrl: "divertiland.jpeg",
+    description: "Proiectare structuri speciale pentru tobogane acvatice. Concepute pentru siguranță și durabilitate."
   },
   {
     id: 3,
-    title: "Vila Modernă Mamaia Nord",
-    category: "Rezidențial",
-    location: "Mamaia Sat",
-    year: "2024",
-    imageUrl: "https://picsum.photos/seed/villa/800/600",
-    description: "Proiectare structurală pentru arhitectură minimalistă."
+    title: "OMV ",
+    category: "Industrial",
+    location: "Burcioaia, jud. Vrancea",
+    imageUrl: "omv burcioaia.jpeg",
+    description: "Dimensionare și proiectare structurală estacade (piperacks) pentru obiective industriale OMV."
   },
   {
     id: 4,
-    title: "Consolidare Clădire Istorică",
+    title: "REABLITIARE SI MODERNIZARE STAȚIE DE EPURARE BUCURESTI-GLINA",
     category: "Reabilitare",
-    location: "Zona Peninsulară",
-    year: "2023",
-    imageUrl: "https://picsum.photos/seed/oldbuild/800/1000",
-    description: "Expertiză tehnică și proiect de consolidare structurală."
+    location: "Glina, jud. Ilfov",
+    imageUrl: "statie de epurare.jpeg",
+    description: "Proiectare structurală pentru bazine de aerare din beton armat monolit, în cadrul Stației de Epurare București-Glina.."
   },
   {
     id: 5,
-    title: "Clădire Birouri Class A",
-    category: "Office",
-    location: "Bulevardul Mamaia",
-    year: "2024",
-    imageUrl: "https://picsum.photos/seed/office_glass/800/700",
-    description: "Imobil de birouri S+P+6E, structură duală și fațadă ventilată."
+    title: "STAȚIE ITP",
+    category: "Civil",
+    location: "Ștefan cel Mare, jud. Constanța",
+    imageUrl: "statie itp.jpeg",
+    description: "Stație ITP: proiectare integrală și gestionare completă a documentației (CU, DTAC, PTH). Structură metalică dimensionată pentru integrarea fluxului auto și a echipamentelor specifice de verificare."
   },
   {
     id: 6,
-    title: "Ansamblu Rezidențial Palazu",
-    category: "Rezidențial",
-    location: "Palazu Mare",
-    year: "2023",
+    title: "GRĂDINIȚA NR. 4",
+    category: "Civil",
+    location: "Cernavodă",
     imageUrl: "https://picsum.photos/seed/apartments_modern/800/600",
-    description: "Complex de 3 blocuri P+4E cu parcare subterană generală."
+    description: "Reabilitare spații verzi: proiectare și gestionare a documentației tehnice pentru modernizarea zonelor exterioare"
   },
   {
     id: 7,
-    title: "Hotel Boutique & Spa",
-    category: "HoReCa",
-    location: "Eforie Nord",
-    year: "2022",
-    imageUrl: "https://picsum.photos/seed/hotel_resort/800/900",
-    description: "Reabilitare și extindere structură existentă, integrare zonă SPA."
+    title: "HALĂ METALICĂ WELDE",
+    category: "Industrial",
+    location: "Cernavodă",
+    imageUrl: "hala leucoplast.jpeg",
+    description: "Hală metalică: proiectare structurală și dimensionare pentru fazele DTAC și PTH."
   },
   {
     id: 8,
-    title: "Showroom Auto & Service",
+    title: "SHOWROOM SAINT GOBAIN",
     category: "Comercial",
-    location: "Valu lui Traian",
-    year: "2024",
-    imageUrl: "https://picsum.photos/seed/showroom_steel/800/600",
+    location: "Vălenii de Munte, jud. Prahova", 
+    imageUrl: "saintgobain.jpeg",
     description: "Structură metalică ușoară, grinzi cu zăbrele și pereți cortină."
   }
 ];
