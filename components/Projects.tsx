@@ -64,7 +64,7 @@ const projectsData: Project[] = [
     title: "SHOWROOM SAINT GOBAIN",
     category: "Comercial",
     location: "Vălenii de Munte, jud. Prahova", 
-    imageUrl: "saintgobain.jpg",
+    imageUrl: "SG.jpeg",
     description: "Amenajare interioară și configurare a zonelor de prezentare. Compartimentarea spațiului și instalarea elementelor decorative au fost realizate pentru a asigura continuitatea parcursului interior și delimitarea clară a zonelor de interes."
   }
 ];
