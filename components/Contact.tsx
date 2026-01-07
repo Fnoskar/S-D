@@ -14,13 +14,13 @@ export const Contact: React.FC = () => {
                 Contact
               </h2>
               <div className="space-y-8">
-                {/* Adresă */}
+                {/* Adresă cu marker la S&D Design Project S.R.L. */}
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Adresă</h4>
                     <a 
-                      href="https://www.google.com/maps/dir//S.C.+S%26D+DESIGN+PROJECT+SRL+Strada+Gheorghe+Doja+40+Cernavod%C4%83+905200/@44.3371905,28.032608,16z" 
+                      href="https://maps.app.goo.gl/85UdGNWdukARbdPaok3CoDc" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="group"
@@ -51,21 +51,21 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Pin mutat la S&D Design Project S.R.L. (Nr. 40) */}
+            {/* Hartă Integrată - Centrată fix pe S&D Design Project S.R.L. */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/place/S.C.+S%26D+DESIGN+PROJECT+SRL/@44.3400793,28.0408193,17.08z/data=!4m6!3m5!1s0x40ba9dd5181d95f3:0x37a0c24da2dad36d!8m2!3d44.3390657!4d28.0426755!16s%2Fg%2F11h3dgpbyp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.2345!2d28.0326!3d44.3371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b0dd9518dd95f3%3A0x27a0c24da2a2d46d!2sS.C.%20S%26D%20DESIGN%20PROJECT%20SRL!5e0!3m2!1sro!2sro!4v1715000000000!5m2!1sro!2sro&dark_mode=true"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
                 allowFullScreen={true}
                 loading="lazy"
-                title="Locație S&D Design Project S.R.L."
+                title="Locație S&D Design"
               ></iframe>
             </div>
           </div>
 
-          {/* Coloana Dreaptă: Formular */}
+          {/* Coloana Dreaptă: Formular (h-fit oprește caseta sub buton) */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm h-fit">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             
@@ -125,7 +125,7 @@ export const Contact: React.FC = () => {
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p>© {new Date().getFullYear()} S&D Design Project.</p>
-            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 invert" />
+            <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 grayscale invert" />
           </div>
           <div className="text-center md:text-right">
             <p className="text-gray-500">Toate drepturile rezervate.</p>
