@@ -1,4 +1,4 @@
-simport React from 'react';
+import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 export const Contact: React.FC = () => {
@@ -7,20 +7,19 @@ export const Contact: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           
-          {/* Coloana Stânga: Informații Contact + Hartă */}
+          {/* Coloana Stânga: Informații Contact + Harta Ta */}
           <div className="md:col-span-5 space-y-12">
             <div>
               <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-12">
                 Contact
               </h2>
               <div className="space-y-8">
-                {/* Adresă cu marker la S&D Design Project S.R.L. */}
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Adresă</h4>
                     <a 
-                      href="https://maps.app.goo.gl/85UdGNWdukARbdPaok3CoDc" 
+                      href="https://www.google.com/maps/search/?api=1&query=Strada+Gheorghe+Doja+40+Cernavoda" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="group"
@@ -51,20 +50,22 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Centrată fix pe S&D Design Project S.R.L. */}
+            {/* Harta integrată cu link-ul tău exact */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.1456892961282!2d28.040819261132253!3d44.34007934646232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba9dd5181d95f3%3A0x37a0c24da2dad36d!2sS.C.%20S%26D%20DESIGN%20PROJECT%20SRL!5e0!3m2!1sro!2sro!4v1767784295486!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
-                allowFullScreen={true}
-                loading="lazy"
-                title="Locație S&D Design"
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.514474705353!2d28.031542!3d44.335235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba235835928d39%3A0xc6222238411b402!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1700000000000!5m2!1sro!2sro0" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Locație Precisă"
               ></iframe>
             </div>
           </div>
 
-          {/* Coloana Dreaptă: Formular (h-fit oprește caseta sub buton) */}
+          {/* Coloana Dreaptă: Formular (h-fit oprește fundalul gri sub buton) */}
           <div className="md:col-span-7 bg-white/5 p-8 md:p-12 border border-white/10 rounded-sm h-fit">
             <h3 className="text-2xl font-bold uppercase tracking-tight mb-6">Trimite un mesaj</h3>
             
