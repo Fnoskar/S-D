@@ -14,24 +14,23 @@ export const Contact: React.FC = () => {
                 Contact
               </h2>
               <div className="space-y-8">
-                {/* Adresă */}
+                {/* Adresă cu link precis */}
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 text-sd-gray shrink-0" />
                   <div>
                     <h4 className="uppercase font-bold tracking-wider mb-2 text-sm text-gray-400">Adresă</h4>
                     <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Strada+Gheorghe+Doja+40+Cernavoda" 
+                      href="https://www.google.com/maps/search/?api=1&query=44.3371,28.0326" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="group"
                     >
                       <p className="text-xl group-hover:text-sd-gray transition-colors">Strada Gheorghe Doja Nr. 40</p>
-                      <p className="text-gray-400 group-hover:text-sd-gray transition-colors">Cernavodă, Constanța</p>
+                      <p className="text-gray-400 group-hover:text-sd-gray transition-colors">Cernavodă, Constanța (Intersecție cu Str. Unirii)</p>
                     </a>
                   </div>
                 </div>
                 
-                {/* Telefon */}
                 <div className="flex items-start gap-4">
                   <Phone className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -40,7 +39,6 @@ export const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex items-start gap-4">
                   <Mail className="mt-1 text-sd-gray shrink-0" />
                   <div>
@@ -53,16 +51,16 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Hartă Integrată - Centrată la Nr. 40 */}
+            {/* Hartă Integrată - Forțată pe coordonatele intersecției cu Str. Unirii */}
             <div className="w-full h-[300px] bg-white/5 rounded-sm overflow-hidden border border-gray-800 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.5645513264426!2d28.0336208!3d44.3353955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ba25656519f96b%3A0x88989508892f3366!2sStrada%20Gheorghe%20Doja%2040%2C%20Cernavod%C4%83!5e0!3m2!1sro!2sro!4v1711234567890!5m2!1sro!2sro&q=44.3353955,28.0336208"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.4357285189726!2d28.0321!3d44.3371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDIwJzEzLjYiTiAyOMKwMDEnNTUuNiJF!5e0!3m2!1sro!2sro!4v1710000000000!5m2!1sro!2sro&q=44.3371,28.0326"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2)' }}
                 allowFullScreen={true}
                 loading="lazy"
-                title="Locație Precisă Nr. 40"
+                title="Locație Precisă Strada Gheorghe Doja 40"
               ></iframe>
             </div>
           </div>
