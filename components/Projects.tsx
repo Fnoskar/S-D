@@ -25,7 +25,7 @@ const projectsData: Project[] = [
     category: "Industrial",
     location: "Burcioaia, jud. Vrancea",
     imageUrl: "omv burcioaia.jpeg",
-    description: "Dimensionare și proiectare structurală estacade (piperacks) pentru obiective industriale OMV."
+    description: "Dimensionare și proiectare structurală estacade (piperacks) pentru obiective industriale OMV. Documentația a vizat configurarea și proiectarea cadrelor metalice pentru 5 tipuri de structuri și a elementelor de fundare aferente acestora. "
   },
   {
     id: 4,
