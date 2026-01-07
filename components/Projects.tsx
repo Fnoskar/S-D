@@ -17,7 +17,7 @@ const projectsData: Project[] = [
     category: "Special",
     location: "Chiajna, jud. Ilfov",
     imageUrl: "divertiland.jpg",
-    description: "Proiectare structuri speciale pentru tobogane acvatice. Activitatea a constat în dimensionarea stâlpilor metalici de susținere și a fundațiilor aferente, structura fiind gândită pentru a rezista la utilizare intensă și la sarcinile dinamice specifice echipamentelor de agrement."
+    description: "Proiectare structuri speciale pentru tobogane acvatice. Concepute pentru siguranță și durabilitate."
   },
   {
     id: 3,
