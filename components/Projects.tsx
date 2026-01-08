@@ -48,7 +48,7 @@ const projectsData: Project[] = [
     title: "GRĂDINIȚA NR. 4",
     category: "Civil",
     location: "Cernavodă, jud. Constanța",
-    imageUrl: "gradinita.jpg",
+    imageUrl: "gradinita.jpeg",
     description: "Reabilitare și amenajare a spațiilor verzi exterioare. Planul de modernizare a inclus sistematizarea terenului și integrarea locurilor de joacă pentru copii, asigurând o experiență sigură și optimizată pentru utilizarea spațiului exterior."
   },
   {
