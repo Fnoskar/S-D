@@ -110,6 +110,10 @@ export const About: React.FC = () => {
               <p>
                 Pentru noi, respectarea normativelor și a rigorilor legii nu este doar o bifă birocratică, ci modul nostru de a-ți garanta siguranța și liniștea în fiecare proiect pe care îl construim împreună.
               </p>
+               <p>
+                În prezent, ne focusăm pe <strong>construcțiile civile</strong>, însă suntem deschiși la parteneriate cu alte firme de proiectare pentru proiecte industriale de anvergură
+              </p>
+              
               
               <div className="my-12">
                  <blockquote className="relative p-8 text-xl italic text-black border-l-4 border-sd-black bg-black/5">
