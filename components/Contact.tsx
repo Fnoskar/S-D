@@ -125,7 +125,7 @@ export const Contact: React.FC = () => {
         {/* Footer */}
         <div className="mt-24 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-8 text-xs uppercase tracking-widest text-gray-600 font-bold">
           <div className="flex flex-col md:flex-row items-center gap-6">
-            <p>© {new Date().getFullYear()} S&D Design Project.</p>
+            <p>© {new Date().getFullYear()} S&D Design Project S.R.L.</p>
             <img src="/firma1.png" alt="Firma de Incredere" className="h-16 w-auto opacity-50 invert" />
           </div>
           <div className="text-center md:text-right">
